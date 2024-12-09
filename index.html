@@ -1,0 +1,940 @@
+<!DOCTYPE html>
+<!-- Website template by freewebsitetemplates.com -->
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>Mixed Rice Restaurant</title>
+		<link rel="stylesheet" href="css/style.css" type="text/css">
+	</head>
+	<body>
+		<div style="margin-left: 20%;">
+			<div>These are the things I have done:</div>
+			<div>1. Create a welcome message when loading index.html</div>
+			<div>2. Add Appropriate footer</div>
+			<div>3. Modify the navigation bar (reduced the number of header)</div>
+			<div>4. Add a "Make Reservation" button, and create a "Make Reservation" function when cliced</div>
+			<div>5. Using CSS change the "Make Reservation" button appearance when hovered</div>
+			<div>6. Create a responsive menu, the menu content will change according to the desire cusine</div>
+			<div>7. Add my image in the "Contact us" section</div>
+			<div>The original template link is: https://freewebsitetemplates.com/forums/threads/rice-restaurant-web-template.20312/</div>
+		</div>
+		<div class="page">
+			<div id="header">
+				<a href="index.html" id="logo"><img src="images/logo.gif" alt=""></a>
+				<ul id="navigation">
+					<li class="selected first"><a href="index.html">Home</a></li>
+					<li><a href="#menu">Menu</a></li>
+					<li><a href="contact.html">Contact us</a></li>
+				</ul>
+				<div id="featured">
+					<img src="images/oriental-mixed-rice.jpg" alt="">
+					<h3>Oriental Mixed Rice Restaurant</h3>
+					<p>
+						<button onclick="reservation()" class="button">Make Reservation</button>
+					</p>
+				</div>
+			</div> 
+			<hr>
+			<h1 id="menu">Menu</h1>
+			<div id="content">
+
+				<div id="home">
+					<div>
+						<ul>
+							<li onclick="jp_menu()"><img src="images/japanese.jpg" alt=""></li>
+							<li onclick="cn_menu()"><img src="images/chinese.jpg" alt=""></li>
+							<li onclick="fi_menu()"><img src="images/filipino.jpg" alt=""></li>
+							<li onclick="vn_menu()"><img src="images/vietnamese.jpg" alt=""></li>
+							<li onclick="kr_menu()"><img src="images/korean.jpg" alt=""></li>
+						</ul>	
+					</div>
+					<div id="table-container">
+						<div id="japanese-menu">
+							<h1>Japanese Menu</h1>
+							<table>
+								<tr>
+									<td>
+										<table>
+											<tr>
+												<td class="product">Wasabe Mixed Rice</td>
+												<td class="price">$10</td>
+											</tr>
+											<tr>
+												<td class="description">Proin in sodales dui.</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<table>
+											<tr>
+												<td class="product">Matsutake Mixed Rice</td>
+												<td class="price">$10</td>
+											</tr>
+											<tr>
+												<td class="description">Nam mattis molestie</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<table>
+											<tr>
+												<td class="product">Tofu Mixed Rice</td>
+												<td class="price">$10</td>
+											</tr>
+											<tr>
+												<td class="description">Phasellus elit erat</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<table>
+											<tr>
+												<td class="product">Shiitake Mixed Rice</td>
+												<td class="price">$10</td>
+											</tr>
+											<tr>
+												<td class="description">Aliquam id justo et elit</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<table>
+											<tr>
+												<td class="product">Matsutake Mixed Rice</td>
+												<td class="price">$10</td>
+											</tr>
+											<tr>
+												<td class="description">Etiam feugiat urna eu ligula</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<table>
+											<tr>
+												<td class="product">Butternut Mixed Rice</td>
+												<td class="price">$10</td>
+											</tr>
+											<tr>
+												<td class="description">Nullam euismod varius elementum</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+							</table>
+							
+							<table>
+								<tr>
+									<td>
+										<table>
+											<tr>
+												<td class="product">Greenbeans Mixed Rice</td>
+												<td class="price">$10</td>
+											</tr>
+											<tr>
+												<td class="description">Nam mattis molestie</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<table>
+											<tr>
+												<td class="product">Lemon Mixed Rice</td>
+												<td class="price">$10</td>
+											</tr>
+											<tr>
+												<td class="description">Nulla placerat fermentum nibh</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<table>
+											<tr>
+												<td class="product">Potato Mixed Rice</td>
+												<td class="price">$10</td>
+											</tr>
+											<tr>
+												<td class="description">Nunc adipiscing augue</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<table>
+											<tr>
+												<td class="product">Spicy Mixed Rice</td>
+												<td class="price">$10</td>
+											</tr>
+											<tr>
+												<td class="description">Per inceptos himenaeos</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<table>
+											<tr>
+												<td class="product">Enoki Mixed Rice</td>
+												<td class="price">$10</td>
+											</tr>
+											<tr>
+												<td class="description">Class aptent taciti sociosqu</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<table>
+											<tr>
+												<td class="product">Takikomi Gohan</td>
+												<td class="price">$10</td>
+											</tr>
+											<tr>
+												<td class="description">Molestie massa a dignissim</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+							</table>
+						</div>
+						<div id="chinese-menu">
+							<h1>Chinese Menu</h1>
+							<table>
+								<tr>
+									<td><table>
+											<tr>
+												<td class="product">Wasabe Mixed Rice</td>
+												<td class="price">$10</td>
+											</tr>
+											<tr>
+												<td class="description">Proin in sodales dui.</td>
+											</tr>
+										</table></td>
+								</tr>
+								<tr>
+									<td><table>
+											<tr>
+												<td class="product">Matsutake Mixed Rice</td>
+												<td class="price">$10</td>
+											</tr>
+											<tr>
+												<td class="description">Nam mattis molestie</td>
+											</tr>
+										</table></td>
+								</tr>
+								<tr>
+									<td><table>
+											<tr>
+												<td class="product">Tofu Mixed Rice</td>
+												<td class="price">$10</td>
+											</tr>
+											<tr>
+												<td class="description">Phasellus elit erat</td>
+											</tr>
+										</table></td>
+								</tr>
+								<tr>
+									<td><table>
+											<tr>
+												<td class="product">Shiitake Mixed Rice</td>
+												<td class="price">$10</td>
+											</tr>
+											<tr>
+												<td class="description">Aliquam id justo et elit</td>
+											</tr>
+										</table></td>
+								</tr>
+								<tr>
+									<td><table>
+											<tr>
+												<td class="product">Matsutake Mixed Rice</td>
+												<td class="price">$10</td>
+											</tr>
+											<tr>
+												<td class="description">Etiam feugiat urna eu ligula</td>
+											</tr>
+										</table></td>
+								</tr>
+								<tr>
+									<td><table>
+											<tr>
+												<td class="product">Butternut Mixed Rice</td>
+												<td class="price">$10</td>
+											</tr>
+											<tr>
+												<td class="description">Nullam euismod varius elementum</td>
+											</tr>
+										</table></td>
+								</tr>
+							</table>
+							<table>
+								<tr>
+									<td><table>
+											<tr>
+												<td class="product">Greenbeans Mixed Rice</td>
+												<td class="price">$10</td>
+											</tr>
+											<tr>
+												<td class="description">Nam mattis molestie</td>
+											</tr>
+										</table></td>
+								</tr>
+								<tr>
+									<td><table>
+											<tr>
+												<td class="product">Lemon Mixed Rice</td>
+												<td class="price">$10</td>
+											</tr>
+											<tr>
+												<td class="description">Nulla placerat fermentum nibh</td>
+											</tr>
+										</table></td>
+								</tr>
+								<tr>
+									<td><table>
+											<tr>
+												<td class="product">Potato Mixed Rice</td>
+												<td class="price">$10</td>
+											</tr>
+											<tr>
+												<td class="description">Nunc adipiscing augue</td>
+											</tr>
+										</table></td>
+								</tr>
+								<tr>
+									<td><table>
+											<tr>
+												<td class="product">Spicy Mixed Rice</td>
+												<td class="price">$10</td>
+											</tr>
+											<tr>
+												<td class="description">Per inceptos himenaeos</td>
+											</tr>
+										</table></td>
+								</tr>
+								<tr>
+									<td><table>
+											<tr>
+												<td class="product">Enoki Mixed Rice</td>
+												<td class="price">$10</td>
+											</tr>
+											<tr>
+												<td class="description">Class aptent taciti sociosqu</td>
+											</tr>
+										</table></td>
+								</tr>
+								<tr>
+									<td><table>
+											<tr>
+												<td class="product">Takikomi Gohan</td>
+												<td class="price">$10</td>
+											</tr>
+											<tr>
+												<td class="description">Molestie massa a dignissim</td>
+											</tr>
+										</table></td>
+								</tr>
+							</table>
+						</div>
+						<div id="filipino-menu">
+							<h1>Filipino Menu</h1>
+							<div>
+								<table>
+									<tr>
+										<td>
+											<table>
+												<tr>
+													<td class="product">Vegetable Mixed Rice</td>
+													<td class="price">$10</td>
+												</tr>
+												<tr>
+													<td class="description">Proin in sodales dui.</td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<table>
+												<tr>
+													<td class="product">Native Mixed Rice</td>
+													<td class="price">$10</td>
+												</tr>
+												<tr>
+													<td class="description">Nam mattis molestie</td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<table>
+												<tr>
+													<td class="product">Checkin Mixed Rice</td>
+													<td class="price">$10</td>
+												</tr>
+												<tr>
+													<td class="description">Phasellus elit erat</td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<table>
+												<tr>
+													<td class="product">Bacon Egg Mixed Rice</td>
+													<td class="price">$10</td>
+												</tr>
+												<tr>
+													<td class="description">Aliquam id justo et elit</td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<table>
+												<tr>
+													<td class="product">Grilled Meat Mixed Rice</td>
+													<td class="price">$10</td>
+												</tr>
+												<tr>
+													<td class="description">Etiam feugiat urna eu ligula</td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<table>
+												<tr>
+													<td class="product">Honey Mixed Rice</td>
+													<td class="price">$10</td>
+												</tr>
+												<tr>
+													<td class="description">Nullam euismod varius elementum</td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+								</table>
+								
+								<table>
+									<tr>
+										<td>
+											<table>
+												<tr>
+													<td class="product">Mushroom Mixed Rice</td>
+													<td class="price">$10</td>
+												</tr>
+												<tr>
+													<td class="description">Nam mattis molestie</td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<table>
+												<tr>
+													<td class="product">Lemon Mixed Rice</td>
+													<td class="price">$10</td>
+												</tr>
+												<tr>
+													<td class="description">Nulla placerat fermentum nibh</td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<table>
+												<tr>
+													<td class="product">Potato Mixed Rice</td>
+													<td class="price">$10</td>
+												</tr>
+												<tr>
+													<td class="description">Nunc adipiscing augue</td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<table>
+												<tr>
+													<td class="product">All Spice Mixed Rice</td>
+													<td class="price">$10</td>
+												</tr>
+												<tr>
+													<td class="description">Per inceptos himenaeos</td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<table>
+												<tr>
+													<td class="product">Red Chilli Mixed Rice</td>
+													<td class="price">$10</td>
+												</tr>
+												<tr>
+													<td class="description">Class aptent taciti sociosqu</td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<table>
+												<tr>
+													<td class="product">Guinisang Lugaw</td>
+													<td class="price">$10</td>
+												</tr>
+												<tr>
+													<td class="description">Molestie massa a dignissim</td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+								</table>
+							</div>
+						</div>
+						<div id="vietnamese-menu">
+							<h1>Vietnamese Menu</h1>
+							<table>
+								<tr>
+									<td>
+										<table>
+											<tr>
+												<td class="product">Wasabe Mixed Rice</td>
+												<td class="price">$10</td>
+											</tr>
+											<tr>
+												<td class="description">Proin in sodales dui.</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<table>
+											<tr>
+												<td class="product">Matsutake Mixed Rice</td>
+												<td class="price">$10</td>
+											</tr>
+											<tr>
+												<td class="description">Nam mattis molestie</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<table>
+											<tr>
+												<td class="product">Tofu Mixed Rice</td>
+												<td class="price">$10</td>
+											</tr>
+											<tr>
+												<td class="description">Phasellus elit erat</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<table>
+											<tr>
+												<td class="product">Shiitake Mixed Rice</td>
+												<td class="price">$10</td>
+											</tr>
+											<tr>
+												<td class="description">Aliquam id justo et elit</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<table>
+											<tr>
+												<td class="product">Matsutake Mixed Rice</td>
+												<td class="price">$10</td>
+											</tr>
+											<tr>
+												<td class="description">Etiam feugiat urna eu ligula</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<table>
+											<tr>
+												<td class="product">Butternut Mixed Rice</td>
+												<td class="price">$10</td>
+											</tr>
+											<tr>
+												<td class="description">Nullam euismod varius elementum</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+							</table>
+							
+							<table>
+								<tr>
+									<td>
+										<table>
+											<tr>
+												<td class="product">Greenbeans Mixed Rice</td>
+												<td class="price">$10</td>
+											</tr>
+											<tr>
+												<td class="description">Nam mattis molestie</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<table>
+											<tr>
+												<td class="product">Lemon Mixed Rice</td>
+												<td class="price">$10</td>
+											</tr>
+											<tr>
+												<td class="description">Nulla placerat fermentum nibh</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<table>
+											<tr>
+												<td class="product">Potato Mixed Rice</td>
+												<td class="price">$10</td>
+											</tr>
+											<tr>
+												<td class="description">Nunc adipiscing augue</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<table>
+											<tr>
+												<td class="product">Spicy Mixed Rice</td>
+												<td class="price">$10</td>
+											</tr>
+											<tr>
+												<td class="description">Per inceptos himenaeos</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<table>
+											<tr>
+												<td class="product">Enoki Mixed Rice</td>
+												<td class="price">$10</td>
+											</tr>
+											<tr>
+												<td class="description">Class aptent taciti sociosqu</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<table>
+											<tr>
+												<td class="product">Takikomi Gohan</td>
+												<td class="price">$10</td>
+											</tr>
+											<tr>
+												<td class="description">Molestie massa a dignissim</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+							</table>
+						</div>
+						<div id="korean-menu">
+							<h1>Korean Menu</h1>
+							<table>
+								<tr>
+									<td>
+										<table>
+											<tr>
+												<td class="product">Wasabe Mixed Rice</td>
+												<td class="price">$10</td>
+											</tr>
+											<tr>
+												<td class="description">Proin in sodales dui.</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<table>
+											<tr>
+												<td class="product">Matsutake Mixed Rice</td>
+												<td class="price">$10</td>
+											</tr>
+											<tr>
+												<td class="description">Nam mattis molestie</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<table>
+											<tr>
+												<td class="product">Tofu Mixed Rice</td>
+												<td class="price">$10</td>
+											</tr>
+											<tr>
+												<td class="description">Phasellus elit erat</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<table>
+											<tr>
+												<td class="product">Shiitake Mixed Rice</td>
+												<td class="price">$10</td>
+											</tr>
+											<tr>
+												<td class="description">Aliquam id justo et elit</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<table>
+											<tr>
+												<td class="product">Matsutake Mixed Rice</td>
+												<td class="price">$10</td>
+											</tr>
+											<tr>
+												<td class="description">Etiam feugiat urna eu ligula</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<table>
+											<tr>
+												<td class="product">Butternut Mixed Rice</td>
+												<td class="price">$10</td>
+											</tr>
+											<tr>
+												<td class="description">Nullam euismod varius elementum</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+							</table>
+							
+							<table>
+								<tr>
+									<td>
+										<table>
+											<tr>
+												<td class="product">Greenbeans Mixed Rice</td>
+												<td class="price">$10</td>
+											</tr>
+											<tr>
+												<td class="description">Nam mattis molestie</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<table>
+											<tr>
+												<td class="product">Lemon Mixed Rice</td>
+												<td class="price">$10</td>
+											</tr>
+											<tr>
+												<td class="description">Nulla placerat fermentum nibh</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<table>
+											<tr>
+												<td class="product">Potato Mixed Rice</td>
+												<td class="price">$10</td>
+											</tr>
+											<tr>
+												<td class="description">Nunc adipiscing augue</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<table>
+											<tr>
+												<td class="product">Spicy Mixed Rice</td>
+												<td class="price">$10</td>
+											</tr>
+											<tr>
+												<td class="description">Per inceptos himenaeos</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<table>
+											<tr>
+												<td class="product">Enoki Mixed Rice</td>
+												<td class="price">$10</td>
+											</tr>
+											<tr>
+												<td class="description">Class aptent taciti sociosqu</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<table>
+											<tr>
+												<td class="product">Takikomi Gohan</td>
+												<td class="price">$10</td>
+											</tr>
+											<tr>
+												<td class="description">Molestie massa a dignissim</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</div>
+
+			<div id="footer">
+				<div>
+					<div class="section1">
+						<a href="blog.html"><img src="images/health-benefits.jpg" alt=""></a>
+						<h4>Health Benefits</h4>
+						<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy ut lao 
+						magna. </p>
+					</div>
+					<div class="section2">
+						<a href="blog.html"><img src="images/mixed-rice.jpg" alt=""></a>
+						<p><span>Lorem ipsum</span> dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+						nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi 
+						enim ad minim veniam, quis nostrud. </p>
+					</div>
+					<div class="section3">
+						<a href="blog.html"><img src="images/mixed-rice2.jpg" alt=""></a>
+						<p><span>Lorem ipsum</span> dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+						nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi 
+						enim ad minim veniam, quis nostrud. </p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+	<hr>
+	<footer class="footer">
+		<div>Nguyen Chung Thai</div>
+		<div>20224029</div>
+	</footer>
+</html>  
+
+<script>
+
+
+	function reservation(){
+		const Name = prompt("Please enter your name:", "Fatih Ozadyn");
+		const date = prompt("Please enter the date of the reservation:", "20/11/2024");
+		const Number_of_guess = prompt("Please enter the number of guests:", "1");
+		const email = prompt("Please enter your email:", "something@gmail.com");
+		// Handling user input
+		if (Name !== null && date !== null && Number_of_guess !== null && email !== null) {
+			alert(
+				"Hello, " + Name + "! We have received your reservation on " +
+				date + " for " + Number_of_guess + " people." +
+				"We have send you a confirmation email. Plese check your email at: "+
+				email
+			);
+		} else {
+			alert("You canceled the input.");
+		}
+	}
+
+	function jp_menu(){
+		document.getElementById("japanese-menu").style.display = "block";
+		document.getElementById("chinese-menu").style.display = "none";
+		document.getElementById("filipino-menu").style.display = "none";
+		document.getElementById("vietnamese-menu").style.display = "none";
+		document.getElementById("korean-menu").style.display = "none";
+	}
+	function cn_menu(){
+		document.getElementById("japanese-menu").style.display = "none";
+		document.getElementById("chinese-menu").style.display = "block";
+		document.getElementById("filipino-menu").style.display = "none";
+		document.getElementById("vietnamese-menu").style.display = "none";
+		document.getElementById("korean-menu").style.display = "none";
+	}
+	function fi_menu(){
+		document.getElementById("japanese-menu").style.display = "none";
+		document.getElementById("chinese-menu").style.display = "none";
+		document.getElementById("filipino-menu").style.display = "block";
+		document.getElementById("vietnamese-menu").style.display = "none";
+		document.getElementById("korean-menu").style.display = "none";
+	}
+	function vn_menu(){
+		document.getElementById("japanese-menu").style.display = "none";
+		document.getElementById("chinese-menu").style.display = "none";
+		document.getElementById("filipino-menu").style.display = "none";
+		document.getElementById("vietnamese-menu").style.display = "block";
+		document.getElementById("korean-menu").style.display = "none";
+	}
+	function kr_menu(){
+		document.getElementById("japanese-menu").style.display = "none";
+		document.getElementById("chinese-menu").style.display = "none";
+		document.getElementById("filipino-menu").style.display = "none";
+		document.getElementById("vietnamese-menu").style.display = "none";
+		document.getElementById("korean-menu").style.display = "block";
+	}
+
+</script>
